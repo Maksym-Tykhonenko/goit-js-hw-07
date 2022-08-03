@@ -30,11 +30,11 @@ function onGalleryElClick(evt) {
     if (!IMG_NODE) {
         return;
     }
-     evt.target.dataset.source;
+    const originalImg = evt.target.dataset.source;
     
   
   const instance = basicLightbox.create(`
-    <img src="${evt.target.dataset.source}" width="800" height="600">
+    <img src="${originalImg}" width="800" height="600">
 `);
   
   //onShow: (instance) => {
